@@ -1,0 +1,10 @@
+^E:\VSGAMEPROJECT\SNAKEGAME\BUILD\CMAKEFILES\3F2254CDA237BA12083D105EBD15CDB5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/vsGAMEproject/SnakeGame -BE:/vsGAMEproject/SnakeGame/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/vsGAMEproject/SnakeGame/build/SnakeGame.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
