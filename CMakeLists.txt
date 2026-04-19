@@ -7,12 +7,22 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(SnakeGame
     main.cpp
-    Game.cpp
-    Snake.cpp
-    Food.cpp
-    Renderer.cpp
-    Input.cpp
-    SaveSystem.cpp
+    core/GameLoop.cpp
+    core/StateMachine.cpp
+    systems/InputSystem.cpp
+    systems/RenderSystem.cpp
+    systems/TimeSystem.cpp
+    gameplay/Snake.cpp
+    gameplay/Food.cpp
+    persistence/SaveSystem.cpp
+)
+
+target_include_directories(SnakeGame PRIVATE
+    ${CMAKE_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/core
+    ${CMAKE_SOURCE_DIR}/systems
+    ${CMAKE_SOURCE_DIR}/gameplay
+    ${CMAKE_SOURCE_DIR}/persistence
 )
 
 if (WIN32)

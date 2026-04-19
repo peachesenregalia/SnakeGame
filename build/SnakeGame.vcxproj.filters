@@ -4,22 +4,28 @@
     <ClCompile Include="E:\vsGAMEproject\SnakeGame\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\vsGAMEproject\SnakeGame\Game.cpp">
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\core\GameLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\vsGAMEproject\SnakeGame\Snake.cpp">
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\core\StateMachine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\vsGAMEproject\SnakeGame\Food.cpp">
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\systems\InputSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\vsGAMEproject\SnakeGame\Renderer.cpp">
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\systems\RenderSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\vsGAMEproject\SnakeGame\Input.cpp">
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\systems\TimeSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\vsGAMEproject\SnakeGame\SaveSystem.cpp">
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\gameplay\Snake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\gameplay\Food.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\vsGAMEproject\SnakeGame\persistence\SaveSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

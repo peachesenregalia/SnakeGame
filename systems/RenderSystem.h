@@ -2,20 +2,19 @@
 
 #include <string>
 #include <vector>
-#include "Snake.h"
-#include "Food.h"
+#include "gameplay/Snake.h"
+#include "gameplay/Food.h"
+#include "core/StateMachine.h"
 
-enum class PlayState;
-
-class Renderer {
+class RenderSystem {
 public:
-    Renderer(int width, int height);
+    RenderSystem(int width, int height);
     void initialize();
     void clear();
     void drawBorder();
     void drawSnake(const Snake& snake);
     void drawFood(const Food& food);
-    void drawHUD(int score, PlayState state);
+    void drawHUD(int score, GameState state);
     void present();
 
 private:
